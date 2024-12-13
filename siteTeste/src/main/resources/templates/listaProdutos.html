@@ -16,6 +16,11 @@
         <tr th:each="usuario : ${userList}">
             <td th:text="${usuario.nome}"></td>
             <td th:text="${usuario.email}"></td>
+            <td>
+            <form th:action="@{/usuarios/{id}/deletar(id=${usuario.getEmail()})}" th:method="delete">
+                <button type="submit">Enviar</button>
+            </form>
+            </td>
         </tr>
     </table>
 

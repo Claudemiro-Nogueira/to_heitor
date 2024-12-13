@@ -13,10 +13,6 @@
     <tr th:each="user : ${users}">
       <td th:text="${user.nome}"></td>
       <td th:text="${user.email}"></td>
-
-      <form th:action="@{/produtos/}" method="delete">
-        <button type="submit"></button>
-      </form>
     </tr>
     </tbody>
   </table>

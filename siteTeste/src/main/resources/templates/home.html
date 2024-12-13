@@ -6,9 +6,9 @@
 </head>
 <body>
     <h1>Seja Bem-Vindo</h1>
-    <a th:href="@{/listar}">Listar Usuarios</a>
+    <a th:href="@{/usuarios/listar}">Listar Usuarios</a>
 
-    <form th:action="@{/salvar}" th:object="${user}" method="post">
+    <form th:action="@{/usuarios/salvar}" th:object="${user}" method="post">
         <label for="idnome" >Nome: </label>
         <input id="idnome" type="text" name="nome" placeholder="Nome" th:field="*{nome}">
         <label for="email">Email: </label>
